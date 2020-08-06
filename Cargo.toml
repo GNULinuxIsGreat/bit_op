@@ -3,10 +3,13 @@ name = "bit_op"
 version = "0.1.0"
 authors = ["GNULinuxIsGreat"]
 edition = "2018"
-description = "bit manipulation"
+description = "Bit manipulation"
 exclude = [
     "gen",
 ]
+license = "MIT/Apache-2.0"
+keywords = ["bit"]
+categories = ["embedded", "no-std"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
