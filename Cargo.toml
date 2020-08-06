@@ -6,8 +6,6 @@ edition = "2018"
 description = "Bit manipulation"
 exclude = [
     "/gen",
-    "/tests",
-    "*.md",
 ]
 license = "MIT/Apache-2.0"
 keywords = ["bit"]
