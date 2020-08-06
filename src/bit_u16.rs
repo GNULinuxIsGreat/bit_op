@@ -1,0 +1,16 @@
+pub const B0: u16 = crate::bit::B0 as u16;
+pub const B1: u16 = crate::bit::B1 as u16;
+pub const B2: u16 = crate::bit::B2 as u16;
+pub const B3: u16 = crate::bit::B3 as u16;
+pub const B4: u16 = crate::bit::B4 as u16;
+pub const B5: u16 = crate::bit::B5 as u16;
+pub const B6: u16 = crate::bit::B6 as u16;
+pub const B7: u16 = crate::bit::B7 as u16;
+pub const B8: u16 = 1 << 8;
+pub const B9: u16 = 1 << 9;
+pub const B10: u16 = 1 << 10;
+pub const B11: u16 = 1 << 11;
+pub const B12: u16 = 1 << 12;
+pub const B13: u16 = 1 << 13;
+pub const B14: u16 = 1 << 14;
+pub const B15: u16 = 1 << 15;
