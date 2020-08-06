@@ -3,6 +3,7 @@ name = "bit_op"
 version = "0.1.0"
 authors = ["GNULinuxIsGreat"]
 edition = "2018"
+description = "bit manipulation"
 exclude = [
     "gen",
 ]
