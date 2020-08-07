@@ -7,51 +7,38 @@ pub mod bit_u32;
 pub mod bit_u64;
 pub mod bit_u8;
 
-pub mod bit_op;
-
-/*pub trait B0B15:
-    Sized
-    + core::ops::BitAnd<u8, Output = Self>
-    + core::ops::BitOrAssign<u8>
-    + core::ops::BitAndAssign<u8>
-    + core::ops::BitXorAssign<u8>
+use core::cmp::PartialEq;
+use core::ops::{BitAnd, BitAndAssign, BitOrAssign, BitXorAssign, Not};
+pub trait BitOp:
+    Not<Output = Self>
+    + BitOrAssign<Self>
+    + BitAndAssign<Self>
+    + BitXorAssign<Self>
+    + BitAnd<Self, Output = Self>
+    + Sized
 {
-}*/
+    fn set(&mut self, rhs: Self) {
+        *self |= rhs;
+    }
 
-/*pub trait B0B31:
-    Sized
-    + core::ops::BitAnd<u8, Output = Self>
-    + core::ops::BitOrAssign<u8>
-    + core::ops::BitAndAssign<u8>
-    + core::ops::BitXorAssign<u8>
-{
+    fn reset(&mut self, rhs: Self) {
+        *self &= !rhs;
+    }
+
+    fn toggle(&mut self, rhs: Self) {
+        *self ^= rhs;
+    }
+
+    fn get(self, rhs: Self) -> Self {
+        self & rhs
+    }
 }
 
-pub trait B0B63:
-    Sized
-    + core::ops::BitAnd<u8, Output = Self>
-    + core::ops::BitOrAssign<u8>
-    + core::ops::BitAndAssign<u8>
-    + core::ops::BitXorAssign<u8>
-{
-}
-
-pub trait B0B127:
-    Sized
-    + core::ops::BitAnd<u8, Output = Self>
-    + core::ops::BitOrAssign<u8>
-    + core::ops::BitAndAssign<u8>
-    + core::ops::BitXorAssign<u8>
-{
-}*/
-
-//impl<T: B0B15> B0B7 for T {}
-//impl<T: B0B31> B0B15 for T {}
-//impl<T: B0B63> B0B31 for T {}
-//impl<T: B0B127> B0B63 for T {}
-
-impl bit_op::U8op for u8 {}
-//impl B0B15 for u8 {}
+impl BitOp for u8 {}
+impl BitOp for u16 {}
+impl BitOp for u32 {}
+impl BitOp for u64 {}
+impl BitOp for u128 {}
 
 #[cfg(test)]
 mod tests;
