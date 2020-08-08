@@ -103,7 +103,7 @@ pub trait BitOp:
     /**
     Toggle desired bits
 
-    # Example
+    # Examples
 
     ```
     use bit_op::{BitOp, bit_u8::*};
