@@ -16,7 +16,7 @@ let mut y = 0u8;
 y.set(B7 | B0);
 assert_eq!(y, 0b10000001);
 ```
-### Reset bit that are selected
+### Reset bits
 ```rust
 use bit_op::BitOp;
 use bit_op::bit_u8::*;
@@ -27,7 +27,7 @@ let mut y = 0b11111111u8;
 y.reset(B7 | B0);
 assert_eq!(y, 0b01111110);
 ```
-### Toggle bit that are selected
+### Toggle bits
 ```rust
 use bit_op::BitOp;
 use bit_op::bit_u8::*;
@@ -38,7 +38,7 @@ x.toggle(B5 | B4 | B3 | B2);
 assert_eq!(x, 0b00001111);
 ```
 
-### Get the bits that are desired
+### Get bits
 ```rust
 use bit_op::BitOp;
 use bit_op::bit_u8::*;

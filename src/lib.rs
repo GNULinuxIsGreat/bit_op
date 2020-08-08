@@ -26,7 +26,7 @@ pub trait BitOp:
     + Sized
 {
     /**
-    # Set bit that are selected
+    # Set bits
     ```
     use bit_op::BitOp;
     use bit_op::bit_u8::*;
@@ -42,8 +42,8 @@ pub trait BitOp:
         *self |= rhs;
     }
 
-        /**
-    # Reset bit that are selected
+    /**
+    # Reset bits
     ```
     use bit_op::BitOp;
     use bit_op::bit_u8::*;
@@ -60,7 +60,7 @@ pub trait BitOp:
     }
 
     /**
-    # Toggle bit that are selected
+    # Toggle bits
     ```
     use bit_op::BitOp;
     use bit_op::bit_u8::*;
@@ -75,8 +75,8 @@ pub trait BitOp:
         *self ^= rhs;
     }
 
-        /**
-    # Get the bits that are desired
+    /**
+    # Get bits
     ```
     use bit_op::BitOp;
     use bit_op::bit_u8::*;
