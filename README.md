@@ -6,7 +6,6 @@
 ## Examples
 
 ### Set desired bits
-
 ``` rust
 use bit_op::{BitOp, bit_u8::*};
 
@@ -22,7 +21,6 @@ assert_eq!(y, 0b10000001);
 ```
 
 ### Reset desired bits
-
 ```rust
 use bit_op::{BitOp, bit_u8::*};
 
@@ -38,7 +36,6 @@ assert_eq!(y, 0b01111110);
 ```
 
 ### Toggle desired bits
-
 ```rust
 use bit_op::{BitOp, bit_u8::*};
 
@@ -52,7 +49,6 @@ assert_eq!(x, 0b00001111);
 ```
 
 ### Get desired bits
-
 ```rust
 use bit_op::{BitOp, bit_u8::*};
 
@@ -62,6 +58,8 @@ assert_eq!(x.get(B7), 0b10000000);
 assert_eq!(x.get(B6), 0b00000000);
 assert_eq!(x.get(B0), 0b00000001);
 ```
+## Contribution
+contributions are welcome!
 
 ## License
 Licensed under either of Apache License, Version 2.0 or MIT license at your option.
