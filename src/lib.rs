@@ -78,7 +78,7 @@ pub trait BitOp:
     }
 
     /**
-    Reset bits desired bits
+    Reset desired bits
 
     # Examples
 
@@ -103,7 +103,7 @@ pub trait BitOp:
     /**
     Toggle desired bits
 
-    # Examplesh
+    # Example
 
     ```
     use bit_op::{BitOp, bit_u8::*};
