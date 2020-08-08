@@ -1,13 +1,11 @@
 #![no_std]
 
-pub mod bit;
 pub mod bit_u128;
 pub mod bit_u16;
 pub mod bit_u32;
 pub mod bit_u64;
 pub mod bit_u8;
 
-use core::cmp::PartialEq;
 use core::ops::{BitAnd, BitAndAssign, BitOrAssign, BitXorAssign, Not};
 pub trait BitOp:
     Not<Output = Self>
