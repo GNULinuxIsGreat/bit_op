@@ -1,16 +1,18 @@
 [package]
 name = "bit_op"
 version = "0.1.0"
-authors = ["GNULinuxIsGreat"]
+authors = ["RustyNixiTube"]
 edition = "2018"
 description = "Bit manipulation"
+readme = "README.md"
+repository = "https://github.com/RustyNixieTube/bit_op"
+license = "MIT/Apache-2.0"
 exclude = [
     "/gen",
 ]
-license = "MIT/Apache-2.0"
 keywords = ["bit"]
 categories = ["embedded", "no-std"]
-readme = "README.md"
+
 publish = false
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

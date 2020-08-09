@@ -1,7 +1,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-0fff0f.svg)](https://opensource.org/licenses/MIT)
 [![License](https://img.shields.io/badge/license-APACHE-0fff0f.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-![](https://tokei.rs/b1/github/GNULinuxIsGreat/bit_op)
+![](https://tokei.rs/b1/github/RustyNixiTube/bit_op)
 # Bit manipulation for rust
 ## Examples
 
