@@ -63,5 +63,5 @@ assert_eq!(x.get(B0), 0b00000001);
 contributions are welcome!
 
 ## License
-Licensed under either of Apache License, Version 2.0 or MIT license at your option.
+Licensed under either of [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) or [MIT license](https://opensource.org/licenses/MIT) at your option.
 Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in this crate by you, as defined in the Apache-2.0 license, shall be dual licensed as above, without any additional terms or conditions.
